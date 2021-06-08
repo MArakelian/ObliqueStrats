@@ -5,9 +5,8 @@ quit_var = True  #track whether the user has quit
 
 # pick and print the strategies
 def strategy_picker():
-    picker = random.randint(0, 27)
+    picker = random.randint(0, len(strategies.sayings))
     print(strategies.sayings[picker])
-
 
 # Basically the main "game loop"
 while (quit_var == True):
